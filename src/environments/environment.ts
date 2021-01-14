@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyAWQndauHno-0jLdyrupZQrEN33h4OIO1o",
+    authDomain: "foodlab-86501.firebaseapp.com",
+    databaseURL: "https://foodlab-86501-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "foodlab-86501",
+    storageBucket: "foodlab-86501.appspot.com",
+    messagingSenderId: "722074979210",
+    appId: "1:722074979210:web:894fcef3a50bfc069ed673",
+    measurementId: "G-F87BQVR5B0"
+  }
 };
 
 /*
