@@ -1,0 +1,167 @@
+<main class="row justify-content-center mb-5">
+    <button (click)="cargaReceta()">Prueba firebase</button>
+    <input (value) = cargaReceta() />
+        <div id="buscarReceta" class="col-12">
+            <div class="row align-content-center" id="cont-barra">
+                <div id="barraBusquedaN" class="col-12 col-lg-8 offset-lg-2 row barraBusqueda">
+                    <form class="row col-12">
+                        <input type="text" id="brn" placeholder="Buscar receta"/>
+                       <input type="image" image="assets/img/buscar.png"/>
+                    </form>
+                </div>
+
+                <div id="barraBusquedaI" class="col-8 offset-2 row barraBusqueda">
+                    <form class="row col-12 justify-content-between">
+                        <input type="text" id="ing" placeholder="Introducir ingredientes" />
+                        <input type="image" image="assets/img/buscar.png" />
+                    </form>
+                </div>
+
+                <div id="barraBusquedaD" class="col-8 offset-2 row barraBusqueda">
+                    <form class="row col-12 justify-content-between">
+                        <select>
+                            <option></option>
+                        </select>
+                        <input type="image" image="assets/img/buscar.png" />
+                    </form>
+                </div>
+
+                <div id="radios" class="row col-12 justify-content-center">
+                    <div class="rBusqueda">
+                        <input type="radio" name="busqueda" value="nombre" id="busqN" checked="checked" />
+                        <label for="busqN">Por nombre</label>
+                    </div>
+
+                    <div class="rBusqueda">
+                        <input type="radio" name="busqueda" value="ingrediente" id="busqI" />
+                        <label for="busqI">Por ingredientes</label>
+                    </div>
+
+                    <div class="rBusqueda">
+                        <input type="radio" name="busqueda" value="dieta" id="busqT" />
+                        <label for="busqT">Por dieta</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <section class="row col-12 mt-5">
+            <h1>Últimas recetas añadidas</h1>
+            <div id="ultimasAdd" class="row justify-content-between">
+                <button class="col-1" id="prev"></button>
+                <ul id="diapositivas" class="col-10 ">
+                    <li>
+
+                        <h:form id="formOculto">
+                            <h:inputHidden id="codRecetaOculto" />
+                            <h:commandButton value="ver" action="#{inicioRespaldo.asignarCod()}" id="diapo"
+                                image="default" />
+                        </h:form>
+
+                        <div id="rotulo"></div>
+
+                    </li>
+                </ul>
+                <button class="col-1" id="next"></button>
+            </div>
+
+        </section>
+
+
+        <section class="row col-12 justify-content-center mt-5">
+            <h1>Explorar</h1>
+            <div id="categorias" class="row mb-5">
+                <div>
+                    <h:form>
+                        <h:inputHidden value="entrante" />
+                        <h:commandButton action="#{inicioRespaldo.buscaReceta()}" value="Entrantes" />
+                    </h:form>
+                </div>
+                <div>
+                    <h:form>
+                        <h:inputHidden value="principal" />
+                        <h:commandButton action="#{inicioRespaldo.buscaReceta()}" value="Principales" />
+                    </h:form>
+                </div>
+                <div>
+                    <h:form>
+                        <h:inputHidden value="carne" />
+                        <h:commandButton action="#{inicioRespaldo.buscaReceta()}" value="Carnes" />
+                    </h:form>
+                </div>
+                <div>
+                    <h:form>
+                        <h:inputHidden value="pescado" />
+                        <h:commandButton action="#{inicioRespaldo.buscaReceta()}" value="Pescados" />
+                    </h:form>
+                </div>
+                <div>
+                    <h:form>
+                        <h:inputHidden value="postre" />
+                        <h:commandButton action="#{inicioRespaldo.buscaReceta()}" value="Postres" />
+                    </h:form>
+                </div>
+            </div>
+        </section>
+
+    </h:panelGroup>
+-->
+    <!--
+    <h:panelGroup rendered="#{inicioRespaldo.pintarRecetas}">
+
+        <ol class="breadcrumb col-12">
+            <li class="breadcrumb-item">
+                <h:form>
+                    <h:commandLink action="#{inicioRespaldo.volverInicio()}">Inicio</h:commandLink>
+                </h:form>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Resultados</li>
+        </ol>
+
+
+
+        <section class="row col-12 justify-content-center g" id="resultadoRecetas">
+
+
+            <h:panelGroup rendered="#{empty inicioRespaldo.recetasNombre}">
+                <span>No se encontraron resultados.</span>
+            </h:panelGroup>
+
+            <ui:repeat value="#{inicioRespaldo.recetasNombre}" var="receta">
+
+                <div class="card">
+
+                    <img src="img/recetas/#{receta.foto}" class="card-img-top" />
+                    <div class="card-body">
+                        <h5>
+                            <h:outputText value="#{receta.nombre}" />
+                        </h5>
+
+
+                        <span>
+                            <b> Dificultad: </b>
+                            <h:outputText value="#{receta.dificultad}" />
+                        </span>
+
+
+                        <h:form id="formOculto">
+                            <h:inputHidden value="#{receta.codReceta}" id="codRecetaOculto" />
+                            <h:commandButton action="#{inicioRespaldo.asignarCod()}" value="ver" />
+                        </h:form>
+
+                    </div>
+                </div>
+
+
+            </ui:repeat>
+        </section>
+
+
+
+
+    </h:panelGroup>
+
+-->
+</main>

@@ -1,79 +1,10 @@
-<script>
-
-    $('#modalSesion').on('shown.bs.modal', function () {
-        $('#bInicioSesion').trigger('focus');
-    });
-
-
-    $(document).ready(function () {
-
-
-        $('[data-toggle="tooltip"]').tooltip();
-
-        $('#bRegistro').click(function (e) {
-            e.preventDefault();
-            //console.log("click");
-
-            $('#modalSesion')
-                .modal('hide')
-                .on('hidden.bs.modal', function (e) {
-                    $('#bRegistro').modal('show');
-                    //console.log("mostrar");
-
-                    $(this).off('hidden.bs.modal'); // Remove the 'on' event binding
-                });
-
-        });
-
-        var show = 0;
-        $('body').on('click', '.perfil', function () {
-            if (show == 0) {
-                $('.menuDesplegable ul').animate({
-                    'opacity': 1
-                }, 600);
-                $('.menuDesplegable ul').animate({
-                    'margin-top': '20px'
-                }, {
-                    duration: 800,
-                    queue: false
-                });
-                show = 1;
-            } else {
-                $('.menuDesplegable ul').animate({
-                    'opacity': 0
-                }, 600);
-                $('.menuDesplegable ul').animate({
-                    'margin-top': '0'
-                }, {
-                    duration: 800,
-                    queue: false
-                });
-                show = 0;
-            }
-        });
-
-        $(window).on('resize', function () {
-            var w = $(this);
-            if (w.width() >= 650) {
-
-                $("figure input[type='image']").attr("src", "img/Logo.png");
-            } else {
-
-                $("figure input[type='image']").attr("src", "img/LogoS.png");
-            }
-        });
-
-    });
-
-</script>
-
-
 <header class="row justify-content-between">
 
     <figure class="col-5 col-md-3 col-lg-2">
 
         <form>
-            <img alt="FoodLab" class="img-fluid" id="logo" src="/assets/img/Logo.png">
+            <input type="image" src="/assets/img/Logo.png" alt="FoodLab" class="img-fluid" id="logo">
+   
 
         </form>
         <figcaption>Come, disfruta y saborea</figcaption>
@@ -82,11 +13,11 @@
     <div id="descripcion" class="align-self-center">
         <span></span>
     </div>
-
+ <!--
     <div id="inicioSesion" class="col-7 col-md-4 col-lg-3 mt-3">
         <button data-toggle="modal" data-target="#modalSesion" id="bInicioSesion">Iniciar sesión</button>
     </div>
-    <!--
+   
     <div class="modal fade" id="modalSesion" tabindex="-1" role="dialog" aria-labelledby="tituloInicio" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -199,31 +130,3 @@
     </div>
 
 </header>
-
-<form>
-    <nav class="row justify-content-center navbar navbar-expand-md navbar-dark" id="menuNav" role="nav">
-        <button class="navbar-toggler  justify-content-center" type="button" data-toggle="collapse" data-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center row " id="menu">
-
-            <a href="">Inicio</a>
-
-            <a href="" class="nav-item">Categorías</a>
-
-            <a href="" class="nav-item">Mis recetas</a>
-            <a href="" class="nav-item">Lista de la compra</a>
-            <a href="" class="nav-item">Panel Admin</a>
-
-
-
-            <!---
-            <h:panelGroup rendered="#{empty loginRespaldo.usuarioLogueado}">
-                <a class="disabled" disabled="disabled" data-toggle="tooltip" data-placement="top" title="Inicia sesión para acceder" styleClass="nav-item">Mis recetas</a>
-                <a class="disabled" disabled="disabled" data-toggle="tooltip" data-placement="top" title="Inicia sesión para acceder" styleClass="nav-item">Lista de la compra</a>
-               
-            </h:panelGroup>
-            -->
-        </div>
-    </nav>
-</form>

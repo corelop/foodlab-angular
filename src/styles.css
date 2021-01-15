@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-may-2020, 11:40:11
+    Author     : CRIS
+*/
+
+/**************Plantilla*************/
+@import url(https://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+
+@font-face{
+    src: url(/assets/fonts/Boogaloo-Regular.ttf);
+    font-family: 'Boogaloo';
+}
+@font-face{
+    src: url(/assets/fonts/GrandHotel-Regular.ttf);
+    font-family: 'GrandHotel';
+}
+
+@font-face{
+    src: url(/assets/fonts/AmaticSC-Regular.ttf);
+    font-family: 'Amatic';
+    font-weight: normal;
+}
+
+@font-face{
+    src: url(/assets/fonts/AmaticSC-Bold.ttf);
+    font-family: 'Amatic';
+    font-weight: bold;
+}
+
+
+#descripcion{
+	color: rgba(244,121,147,1.00);
+	
+}
+
+
+
+#contenedor{
+    background-color: #BFF378;
+	min-width: 330px;
+}
+
+header, nav, footer{
+    background-color: white;
+}
+
+
+@media only screen and (max-width:500px){
+	
+	nav#menuNav a{
+		font-size: 1.1em;
+		padding: 0.5em;
+		width: 100%;
+		border-radius: 0px !important;
+	}
+	
+	nav#menuNav a:hover{
+    box-shadow:  -10px -1px 0px 0px #F47993;
+}
+	
+	figcaption{
+		display: none;
+	}
+	
+	#inicioSesion button{
+		padding: 0.5em;
+		font-size: 0.9em;
+	}
+	
+	h1{
+		width: 95%;
+		font-size: 2em;
+	}
+	
+	section{
+		margin: 1em 0;
+	}
+	
+	footer{
+		align-content: center;
+	}
+
+}
+
+
+

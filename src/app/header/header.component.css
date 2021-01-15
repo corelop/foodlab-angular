@@ -9,46 +9,8 @@ and open the template in the editor.
 */
 
 /**************Plantilla*************/
-@import url(https://weloveiconfonts.com/api/?family=brandico);
-
-/* brandico */
-[class*="brandico-"]:before {
-    font-family: 'brandico', sans-serif;
-    font-size: 2em;
-}
-
-@font-face{
-    src: url(/assets/fonts/Boogaloo-Regular.ttf);
-    font-family: 'Boogaloo';
-}
-@font-face{
-    src: url(/assets/fonts/GrandHotel-Regular.ttf);
-    font-family: 'GrandHotel';
-}
-
-@font-face{
-    src: url(/assets/fonts/AmaticSC-Regular.ttf);
-    font-family: 'Amatic';
-    font-weight: normal;
-}
-
-@font-face{
-    src: url(/assets/fonts/AmaticSC-Bold.ttf);
-    font-family: 'Amatic';
-    font-weight: bold;
-}
-
-#descripcion{
-	color: rgba(244,121,147,1.00);
-	
-}
 
 
-
-#contenedor{
-    background-color: #BFF378;
-	min-width: 330px;
-}
 
 header, nav, footer{
     background-color: white;
@@ -282,50 +244,17 @@ text-align: center;
 }
 
 
-nav#menuNav div, nav#menuNav button{
-		margin-bottom: -0.5em;
-}
-
-nav#menuNav a.selected{
-    background-color: #BFF378;
-    color: white;
-}
-
-nav#menuNav a{
-    background-color: #FAF5F6;
-    color: #11212d;
-    font-family: 'GrandHotel';
-    font-size: 1.5em;
-    padding: 0.3em 1em;
-    letter-spacing: 1px;
-    transition: all 0.3s;
-}
-
-nav#menuNav a:hover{
-    color:#F47993;
-    box-shadow:  0px -10px 0px 0px #F47993;
-    text-decoration: none;
+#descripcion{
+	color: rgba(244,121,147,1.00);
 	
 }
 
-nav#menuNav a.disabled{
-    color: #3B5162;
+
+
+#contenedor{
+    background-color: #BFF378;
+	min-width: 330px;
 }
-
-nav#menuNav a.disabled:hover{
-	cursor: default;
-	box-shadow: 0px 0px 0px 0px #F47993;
-}
-
-
-nav#menuNav a:first-of-type{
-    border-top-left-radius: 15px;	
-}
-
-nav#menuNav a:last-child{
-    border-top-right-radius: 15px;	
-}
-
 
 h1,h2,h3{
     font-family: 'Boogaloo';	
@@ -378,63 +307,6 @@ section{
 	box-sizing: border-box;
 }
 
-footer{
-    border-top: 5px solid #369A00;
-	padding: 1em;
-}
-
-footer a{
-    color: rgba(117,223,190,1.00);
-    transition: all 0.5s;
-	margin: 0.2em;
-}
-
-footer a:hover{
-    color: rgba(23,102,78,1.00);
-    text-shadow: 0px 0px 15px rgba(117,223,190,1.00);
-    text-decoration: none;
-}
-
-button:hover{
-    cursor:pointer;
-}
-
-#redes{
-	margin: 2.5em 0;
-}
-
-footer #redes h6{
-	font-family: 'GrandHotel';
-	font-size: 1.6em;
-	
-}
-
-
-#copyright{
-	text-align: right;
-	font-size: 0.8em;
-	font-style: oblique;
-}
-
-
-
-#soporte{
-	font-family: 'Amatic';
-    font-weight: bolder;
-	font-size: 1.5em;
-	letter-spacing: 2px;
-}
-
-#soporte a{
-	margin-top: 0.2em;
-	padding: 0.2em 1.2em ;
-	margin: 0;
-}
-
-#soporte a:first-child{
-	border-right: 2px solid rgba(23,102,78,1.00);
-	margin-left: -1em;
-}
 
 
 ol.breadcrumb{
@@ -449,29 +321,10 @@ ol.breadcrumb a{
 	
 }
 
-#menuNav>button{
-	background-color: rgba(191,243,120,1.00); 
-	width: 100%;
-	
-}
-
-#menuNav>button span{
-	color: rgba(255,255,255,1.00);
-	align-self: center;
-}
 
 @media only screen and (max-width:500px){
 	
-	nav#menuNav a{
-		font-size: 1.1em;
-		padding: 0.5em;
-		width: 100%;
-		border-radius: 0px !important;
-	}
 	
-	nav#menuNav a:hover{
-    box-shadow:  -10px -1px 0px 0px #F47993;
-}
 	
 	figcaption{
 		display: none;
@@ -491,9 +344,7 @@ ol.breadcrumb a{
 		margin: 1em 0;
 	}
 	
-	footer{
-		align-content: center;
-	}
+
 
 }
 
